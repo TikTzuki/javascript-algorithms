@@ -1,49 +1,45 @@
 {
-  "name": "javascript-algorithms-and-data-structures",
-  "version": "0.0.4",
-  "description": "Algorithms and data-structures implemented on JavaScript",
-  "main": "index.js",
+  "name": "javascript-algorithms",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.11.2",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^12.6.0",
+    "@types/jest": "^26.0.19",
+    "@types/node": "^12.19.9",
+    "@types/react": "^16.14.2",
+    "@types/react-dom": "^16.9.10",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.1",
+    "typescript": "^4.1.3",
+    "web-vitals": "^0.2.4"
+  },
   "scripts": {
-    "lint": "eslint ./src/*",
-    "test": "jest",
-    "ci": "npm run lint && npm run test -- --coverage"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/trekhleb/javascript-algorithms.git"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "keywords": [
-    "computer-science",
-    "cs",
-    "algorithms",
-    "data-structures",
-    "javascript",
-    "algorithm",
-    "javascript-algorithms",
-    "sorting-algorithms",
-    "graph",
-    "tree",
-    "interview",
-    "interview-preparation"
-  ],
-  "author": "Oleksii Trekhleb (https://www.linkedin.com/in/trekhleb/)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/trekhleb/javascript-algorithms/issues"
-  },
-  "homepage": "https://github.com/trekhleb/javascript-algorithms#readme",
-  "devDependencies": {
-    "@babel/cli": "^7.4.4",
-    "@babel/preset-env": "^7.4.5",
-    "@types/jest": "^24.0.15",
-    "eslint": "^6.0.1",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-import": "^2.18.0",
-    "eslint-plugin-jest": "^22.7.1",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-react": "^7.14.2",
-    "husky": "^2.5.0",
-    "jest": "^24.8.0"
-  },
-  "dependencies": {}
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
